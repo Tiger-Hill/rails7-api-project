@@ -8,4 +8,6 @@ class User < ApplicationRecord
 
   extend FriendlyId
   friendly_id :uuid, use: [ :slugged, :finders ]
+
+  has_one :user_detail
 end
