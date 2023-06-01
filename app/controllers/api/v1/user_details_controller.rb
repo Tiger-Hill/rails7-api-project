@@ -2,7 +2,7 @@ class Api::V1::UserDetailsController < ApplicationController
   before_action :set_user_detail, only: [ :show, :update ]
 
   def show
-    # authorize @user_detail
+    authorize @user_detail
 
     render jsonapi: @user_detail,
       include: [ :documents ],
@@ -10,7 +10,7 @@ class Api::V1::UserDetailsController < ApplicationController
   end
 
   def update
-    # authorize @user_detail
+    authorize @user_detail
 
     if @user_detail.update(user_detail_params)
       render  jsonapi: @user_detail,

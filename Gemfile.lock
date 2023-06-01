@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/varvet/pundit
+  revision: 5b22078621cf0249d39dc8c8bb0e037cae779fb0
+  specs:
+    pundit (2.3.0)
+      activesupport (>= 3.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -259,6 +266,7 @@ DEPENDENCIES
   jsonapi-rspec
   pg (~> 1.1)
   puma (~> 5.0)
+  pundit (~> 2.3)!
   rack-cors
   rails (~> 7.0.5)
   rspec-rails (~> 5.1)
