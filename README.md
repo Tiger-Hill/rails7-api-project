@@ -1,5 +1,3 @@
-# Rails 7 Default API
-
 Pre-requisites: Rails 7.0.4.3, Ruby 3.2.1, current as of 2023/06/01
 
 This is a pretty (borderline excessively) detailed guide to help you set up a fully rounded development environment for a Rails 7 app in API mode. This can be puzzled together within days for a non-novice dev, but I wanted to save you the pain from chasing down various error messages to efficiently get to a developer-friendly setup within a few hours. 
@@ -928,6 +926,11 @@ class UserDetailPolicy < ApplicationPolicy
     show?
   end
 end
+```
+
+If you have not already, restart the server with `Ctrl + c` and then again
+```bash
+rails s
 ```
 
 Now, we should not be able to change u2's email with u1's credentials anymore
