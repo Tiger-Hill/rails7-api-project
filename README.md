@@ -835,9 +835,9 @@ But we can still rename him with u1's Bearer token. NOTE: we changed the id of t
 curl -XPATCH -H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwic2NwIjoidXNlciIsImF1ZCI6bnVsbCwiaWF0IjoxNjg0NTE1ODM5LCJleHAiOjE2ODQ2MDIyMzksImp0aSI6IjEyYzkxMWY4LWJlZDQtNDUxNi1hZDU3LTJjNzE2OWRhODc2YSJ9.b6QQBn4zJrG2lpI7wpYDg7I93XH22NHx52loy71I3L0" -H "Content-Type: application/json" -d '{ "user_detail": { "first_name": "Jacqueline"} }' http://localhost:3000/api/v1/user_details/eb2a7d38503a
 ```
 
-That's not good. Time for Pundit!
+That's not good. Time for pundit!
 
-## Adding Pundit 
+## Adding pundit 
 Add the following gem
 ```ruby
 # *** Gemfile ***
