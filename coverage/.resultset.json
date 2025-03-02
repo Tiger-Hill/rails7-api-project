@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/useryilun/code/tiger-hill/rails7-api-project/app/models/user.rb": {
+      "/home/chenyilun/code/tiger-hill/rails7-api-project/app/models/user.rb": {
         "lines": [
           1,
           null,
@@ -20,7 +20,7 @@
         "branches": {
         }
       },
-      "/home/useryilun/code/tiger-hill/rails7-api-project/app/models/application_record.rb": {
+      "/home/chenyilun/code/tiger-hill/rails7-api-project/app/models/application_record.rb": {
         "lines": [
           1,
           1,
@@ -33,7 +33,7 @@
         "branches": {
         }
       },
-      "/home/useryilun/code/tiger-hill/rails7-api-project/app/models/jwt_denylist.rb": {
+      "/home/chenyilun/code/tiger-hill/rails7-api-project/app/models/jwt_denylist.rb": {
         "lines": [
           1,
           1,
@@ -44,7 +44,7 @@
         "branches": {
         }
       },
-      "/home/useryilun/code/tiger-hill/rails7-api-project/app/models/user_detail.rb": {
+      "/home/chenyilun/code/tiger-hill/rails7-api-project/app/models/user_detail.rb": {
         "lines": [
           1,
           1,
@@ -56,7 +56,7 @@
         "branches": {
         }
       },
-      "/home/useryilun/code/tiger-hill/rails7-api-project/app/policies/user_detail_policy.rb": {
+      "/home/chenyilun/code/tiger-hill/rails7-api-project/app/policies/user_detail_policy.rb": {
         "lines": [
           1,
           1,
@@ -78,7 +78,7 @@
         "branches": {
         }
       },
-      "/home/useryilun/code/tiger-hill/rails7-api-project/app/policies/application_policy.rb": {
+      "/home/chenyilun/code/tiger-hill/rails7-api-project/app/policies/application_policy.rb": {
         "lines": [
           null,
           null,
@@ -137,7 +137,7 @@
         "branches": {
         }
       },
-      "/home/useryilun/code/tiger-hill/rails7-api-project/app/controllers/api/v1/user_details_controller.rb": {
+      "/home/chenyilun/code/tiger-hill/rails7-api-project/app/controllers/api/v1/user_details_controller.rb": {
         "lines": [
           1,
           1,
@@ -186,7 +186,7 @@
           }
         }
       },
-      "/home/useryilun/code/tiger-hill/rails7-api-project/app/controllers/application_controller.rb": {
+      "/home/chenyilun/code/tiger-hill/rails7-api-project/app/controllers/application_controller.rb": {
         "lines": [
           1,
           1,
@@ -213,7 +213,7 @@
         "branches": {
         }
       },
-      "/home/useryilun/code/tiger-hill/rails7-api-project/app/controllers/users/sessions_controller.rb": {
+      "/home/chenyilun/code/tiger-hill/rails7-api-project/app/controllers/users/sessions_controller.rb": {
         "lines": [
           1,
           1,
@@ -276,7 +276,7 @@
           }
         }
       },
-      "/home/useryilun/code/tiger-hill/rails7-api-project/app/resources/serializable_user.rb": {
+      "/home/chenyilun/code/tiger-hill/rails7-api-project/app/resources/serializable_user.rb": {
         "lines": [
           1,
           1,
@@ -292,7 +292,7 @@
         "branches": {
         }
       },
-      "/home/useryilun/code/tiger-hill/rails7-api-project/app/resources/serializable_user_detail.rb": {
+      "/home/chenyilun/code/tiger-hill/rails7-api-project/app/resources/serializable_user_detail.rb": {
         "lines": [
           1,
           1,
@@ -311,7 +311,7 @@
         "branches": {
         }
       },
-      "/home/useryilun/code/tiger-hill/rails7-api-project/app/channels/application_cable/channel.rb": {
+      "/home/chenyilun/code/tiger-hill/rails7-api-project/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
           0,
@@ -321,7 +321,7 @@
         "branches": {
         }
       },
-      "/home/useryilun/code/tiger-hill/rails7-api-project/app/channels/application_cable/connection.rb": {
+      "/home/chenyilun/code/tiger-hill/rails7-api-project/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
           0,
@@ -331,7 +331,7 @@
         "branches": {
         }
       },
-      "/home/useryilun/code/tiger-hill/rails7-api-project/app/controllers/concerns/rack_session_fix.rb": {
+      "/home/chenyilun/code/tiger-hill/rails7-api-project/app/controllers/concerns/rack_session_fix.rb": {
         "lines": [
           0,
           0,
@@ -352,7 +352,7 @@
         "branches": {
         }
       },
-      "/home/useryilun/code/tiger-hill/rails7-api-project/app/controllers/users/registrations_controller.rb": {
+      "/home/chenyilun/code/tiger-hill/rails7-api-project/app/controllers/users/registrations_controller.rb": {
         "lines": [
           null,
           null,
@@ -439,7 +439,7 @@
         "branches": {
         }
       },
-      "/home/useryilun/code/tiger-hill/rails7-api-project/app/mailers/application_mailer.rb": {
+      "/home/chenyilun/code/tiger-hill/rails7-api-project/app/mailers/application_mailer.rb": {
         "lines": [
           0,
           0,
@@ -450,6 +450,6 @@
         }
       }
     },
-    "timestamp": 1685661572
+    "timestamp": 1740900753
   }
 }

@@ -36,7 +36,9 @@ gem "bootsnap", require: false
 gem "dotenv-rails"
 gem 'devise'
 gem 'devise-jwt'
-gem 'jsonapi-rails'
+# gem 'jsonapi-rails'
+gem 'jsonapi-serializer', '~> 2.2'
+
 gem 'friendly_id', '~> 5.4.0'
 gem 'pundit', '~> 2.3', git: 'https://github.com/varvet/pundit'
 
