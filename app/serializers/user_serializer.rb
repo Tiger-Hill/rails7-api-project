@@ -1,7 +1,7 @@
 class UserSerializer
   include JSONAPI::Serializer
 
-  set_id :uuid
+  set_id :slug
 
   attributes :email
 
