@@ -26,7 +26,7 @@
           1,
           null,
           1,
-          52,
+          53,
           null,
           null
         ],
@@ -146,21 +146,26 @@
           1,
           null,
           1,
+          1,
+          1,
           null,
-          null,
+          1,
           null,
           null,
           1,
           2,
           null,
           2,
+          2,
+          1,
           1,
           null,
-          null,
-          null,
           1,
           null,
+          1,
+          1,
           null,
+          1,
           null,
           null,
           null,
@@ -180,9 +185,9 @@
           null
         ],
         "branches": {
-          "[:if, 0, 15, 4, 23, 7]": {
-            "[:then, 1, 16, 6, 18, 25]": 1,
-            "[:else, 2, 20, 6, 22, 19]": 1
+          "[:if, 0, 18, 4, 28, 7]": {
+            "[:then, 1, 19, 6, 22, 41]": 1,
+            "[:else, 2, 24, 6, 27, 41]": 1
           }
         }
       },
@@ -222,10 +227,35 @@
           3,
           1,
           1,
+          null,
+          1,
+          1,
+          1,
+          null,
           1,
           null,
           null,
+          1,
+          0,
+          0,
+          0,
           null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          0,
           null,
           null,
           1,
@@ -233,27 +263,7 @@
           0,
           0,
           null,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
           0,
-          null,
-          0,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null,
           null,
           null
         ],
@@ -262,50 +272,43 @@
             "[:then, 1, 7, 4, 7, 18]": 0,
             "[:else, 2, 7, 4, 7, 34]": 1
           },
-          "[:if, 3, 15, 18, 15, 81]": {
-            "[:then, 4, 15, 47, 15, 55]": 0,
-            "[:else, 5, 15, 58, 15, 81]": 0
+          "[:if, 3, 17, 18, 17, 81]": {
+            "[:then, 4, 17, 47, 17, 55]": 0,
+            "[:else, 5, 17, 58, 17, 81]": 0
           },
-          "[:if, 6, 16, 4, 16, 25]": {
-            "[:then, 7, 16, 4, 16, 9]": 0,
-            "[:else, 8, 16, 4, 16, 25]": 0
+          "[:if, 6, 18, 4, 18, 25]": {
+            "[:then, 7, 18, 4, 18, 9]": 0,
+            "[:else, 8, 18, 4, 18, 25]": 0
           },
-          "[:if, 9, 25, 6, 25, 47]": {
-            "[:then, 10, 25, 6, 25, 31]": 0,
-            "[:else, 11, 25, 6, 25, 47]": 0
+          "[:if, 9, 27, 4, 27, 45]": {
+            "[:then, 10, 27, 4, 27, 29]": 0,
+            "[:else, 11, 27, 4, 27, 45]": 0
           }
         }
       },
-      "/home/chenyilun/code/tiger-hill/rails7-api-project/app/resources/serializable_user.rb": {
+      "/home/chenyilun/code/tiger-hill/rails7-api-project/app/serializers/user_serializer.rb": {
         "lines": [
           1,
           1,
           null,
-          2,
-          null,
           1,
           null,
           1,
           null,
+          1,
           null
         ],
         "branches": {
         }
       },
-      "/home/chenyilun/code/tiger-hill/rails7-api-project/app/resources/serializable_user_detail.rb": {
+      "/home/chenyilun/code/tiger-hill/rails7-api-project/app/serializers/user_detail_serializer.rb": {
         "lines": [
           1,
           1,
           null,
-          5,
-          null,
           1,
           null,
           1,
-          null,
-          null,
-          null,
-          null,
           null
         ],
         "branches": {
@@ -450,6 +453,6 @@
         }
       }
     },
-    "timestamp": 1740900753
+    "timestamp": 1740904491
   }
 }

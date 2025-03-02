@@ -61,9 +61,9 @@ RSpec.describe Api::V1::UserDetailsController, type: :request do
     it "displays to get the user_details#show information" do
       get "/api/v1/user_details/#{@valid_user_detail_1.slug}", headers: authenticated_header(@valid_user_1)
       document = JSON.parse(response.body)
+      puts response.body.to_s
       expect(response.status).to eq(200)
-      expect(document).to have_jsonapi_object
-      expect(document['data']).to have_type('user_details')
+      expect(document['data']).to have_type('user_detail')
     end
 
     it "updates the user's user_details - note that with the React frontend, we will realistically get an entire object back" do
@@ -77,8 +77,7 @@ RSpec.describe Api::V1::UserDetailsController, type: :request do
       puts response.body
       document = JSON.parse(response.body)
       expect(response.status).to eq(200)
-      expect(document).to have_jsonapi_object
-      expect(document['data']).to have_type('user_details')
+      expect(document['data']).to have_type('user_detail')
       expect(document['data']['attributes']['first_name']).to eq('Jacqueline')
     end
 
@@ -93,7 +92,6 @@ RSpec.describe Api::V1::UserDetailsController, type: :request do
       puts response.body
       document = JSON.parse(response.body)
       expect(response.status).to eq(409)
-      expect(document).to have_jsonapi_object
     end
   end
 end
