@@ -5,10 +5,12 @@ class Users::SessionsController < Devise::SessionsController
     self.resource = warden.authenticate!(auth_options)
     sign_in(resource_name, resource)
     yield resource if block_given?
-    render jsonapi: resource,
-      include: [ :user_detail ],
-      meta: { message: "Successfully logged in!" },
-      status: :ok
+
+    options = {}
+    options[:meta] = { message: 'Successfully logged in.' }
+    json_hash = UserSerializer.new(resource, options).serializable_hash
+
+    render json: json_hash, status: 200
   end
 
   def destroy
@@ -22,20 +24,23 @@ class Users::SessionsController < Devise::SessionsController
   private
 
   def respond_to_on_destroy
-      log_out_success && return if current_user
-
-      log_out_failure
-    end
+    log_out_success && return if current_user
+    log_out_failure
+  end
 
   def log_out_success
-    render jsonapi: [],
-      meta: { message: "You have been logged out." },
-      status: 200
+    options = {}
+    options[:meta] = { message: 'You have been logged out.' }
+    json_hash = UserSerializer.new(nil, options).serializable_hash
+
+    render json: json_hash, status: 200
   end
 
   def log_out_failure
-    render jsonapi_errors: [],
-      meta: { message: "Log out failed." },
-      status: 422
+    options = {}
+    options[:meta] = { error_message: 'Log out failed.' }
+    json_hash = UserSerializer.new(nil, options).serializable_hash
+
+    render json: json_hash, status: 422
   end
 end

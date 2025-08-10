@@ -4,22 +4,27 @@ class Api::V1::UserDetailsController < ApplicationController
   def show
     authorize @user_detail
 
-    render jsonapi: @user_detail,
-      include: [ :documents ],
-      status: :ok
+    options = {}
+    options[:meta] = { message: 'Successfully returned user detail.' }
+    json_hash = UserDetailSerializer.new(@user_detail, options).serializable_hash
+
+    render json: json_hash, status: 200
   end
 
   def update
     authorize @user_detail
 
+    options = {}
     if @user_detail.update(user_detail_params)
-      render  jsonapi: @user_detail,
-              meta: { message: "Successfully updated user details!" },
-              status: :ok
+      options[:meta] = { message: 'Successfully updated user detail.' }
+      json_hash = UserDetailSerializer.new(@user_detail, options).serializable_hash
+
+      render json: json_hash, status: 200
     else
-      render jsonapi_errors: @user_detail,
-        meta: { message: "Failed to update user details (Reason: #{@user_detail.errors.messages})" },
-        status: 409
+      options[:meta] = { error_message: "Failed to update user details (Reason(s): #{@user_detail.errors.full_messages})." }
+      json_hash = UserDetailSerializer.new(@user_detail, options).serializable_hash
+
+      render json: json_hash, status: 409
     end
   end
 
