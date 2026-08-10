@@ -1,0 +1,2 @@
+class SubTablesController < ApplicationController
+end
